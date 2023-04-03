@@ -1,0 +1,546 @@
+* {
+    box-sizing: border-box;
+ }
+
+ body {
+    margin: 0;
+    padding: 0;
+    font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "MS Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif,;
+    background-color: #e6e6e6;
+ }
+ header {
+    width: 100%;
+    background-color: #5298d6;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    z-index: 999;
+  width: 100%;
+  height: 90px; /* 高さを136pxに指定 */
+  justify-content: space-between;
+  padding-left: 9px;
+ }
+
+main {
+    margin-top: 90px; /* 上の空白を136pxに指定 */
+  }
+h1 {
+    padding: 0;
+    font-size: 20px;
+}
+h1 img {
+    width: 190px;
+}
+li a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px 0 17px; 
+    font-size: 17px;    
+}
+.namae {
+    margin-left: 70px;
+    margin-right: 50px;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+}
+nav {
+    display: flex;
+    align-items: center;
+}
+.top-migi {
+    flex-direction: column;
+    color: #fff;
+    font-size: 20px;
+}
+.top-migi2:hover {
+    color: #000; 
+    background-color: #43434374; 
+    transition : 0.75s;
+}
+.top-migi3:hover {
+    color: #000; 
+    background-color: #43434374; 
+    transition : 0.75s;
+}
+.top-migi img {
+    width: 20%;
+    height: 60%;
+    padding: 0 5px 0 0;
+}
+.firstview img {
+    margin-top: -20%;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    object-fit: contain;                                                       
+}
+.slick-slider{
+  margin: 0;
+  padding: 0;
+}
+.slick-slider img {
+  width: 100%;
+  height: 100vh;
+}
+h2 {
+    text-align:center;
+    color: #5298d6;
+    align-items: center;
+    padding-top: 100px;
+}
+h2 img {
+    align-items: center;
+    height: 40px;
+    vertical-align: bottom;
+
+}
+section {
+    padding-top: 5%;
+}
+.tokutyou-wrap {
+    display: flex;
+    max-width: 1080px;
+    margin: auto;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.tokutyou {
+    color: #00406c;
+    padding-left: 4em;    
+}
+.tokutyou2 {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 30px;
+} 
+.annai {
+    text-align: center;
+}
+.width1080 {
+    max-width: 1080px;
+    margin: auto;
+}
+.flex-wrap {
+    display: flex;
+    padding-left: 0;
+    justify-content: space-between;
+    margin-top: 100px
+}
+.slider-wrap {
+    display: flex;
+}
+.slider-thumbnail {
+    width: 40%;
+}
+.swiper-wrapper {
+    width: 40%;
+}
+.box-flex {
+    display: flex;
+    align-items: center;
+    height: 45px;
+}
+.oshirase {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.oshirase-wrap li {
+    width: 49%;
+    background: #fff;
+    margin-bottom: 1em;
+    margin-right: 2%;
+}
+.oshirase-wrap li:nth-of-type(even) {
+    margin-right: 0;
+}
+.oshirase-wrap {
+    flex-wrap: wrap;
+    padding: 0;
+}
+.oshirase img {
+    width: 100%;
+}
+.oshirase p:first-child {
+    width: 30%;
+    margin: 0;
+}
+.oshirase p:last-child {
+    width: 70%;
+    color: #00406c;
+}
+img {
+    vertical-align: bottom;
+}
+.ichiran {
+    text-align: center;
+    margin: 2em 0 5em 0;
+}
+.ichiran a {
+    padding: 1em 3em;
+    text-decoration: none;
+    color: #fff;
+    background: #5298d6;
+    border-radius: 18px;
+}
+.shashin img {
+    width: 100%;
+}
+.shashin {
+    display: flex;
+    max-width: 100%;
+}
+.shashin p {
+    width: 33.3333%;
+}
+
+.biz-hour {
+    display: block;
+    border-collapse: collapse;
+    /* overflow-x: scroll;で、
+    スマホ画面幅に表が入りきらない場合は
+    横スクロールしてくれます */
+    overflow-x: scroll;
+    margin-bottom: 2em;
+  }
+  
+  .biz-hour th, .biz-hour td {
+    padding: 18px 20px;
+    text-align: center;
+    /* ２番目以降の線 */
+    /* 色はお好みで */
+    border-bottom: 1px solid #000;
+  }
+  .biz-hour tbody tr:last-child td {
+    border-bottom: none;
+  }
+  /* スマホ時に横スクロールしないよう、横の余白（padding）を20px→10pxに */
+  @media screen and (max-width: 559px) {
+    .biz-hour th, .biz-hour td {
+      padding: 10px 10px;
+    }
+  }
+  
+  .biz-hour th {
+    font-weight: normal;
+  }
+  
+  /* 「土」の文字色 */
+  .biz-hour th.sat {
+    color: #5298d6;
+  }
+  
+  /* 「日」の文字色 */
+  .biz-hour th.sun {
+    color: #5298d6;
+  }
+  .biz-hour tbody {
+    color: #5298d6;
+  }
+  .font-size-s {
+    font-size: 0.8em;
+  }
+  .webyoyaku p,
+  .yoyaku p {
+    margin: 0;
+    font-size: 1.5em;
+    display: inline-block;
+  }
+  .webyoyaku span,
+  .yoyaku span {
+    color: #00406c;
+    display: block;
+  }
+  .webyoyaku p a,
+  .yoyaku p a {
+    color: #5298d6;
+    text-decoration: none;
+    display: flex;
+  }
+  .webyoyaku p a::before,
+  .yoyaku p a::before {
+    content: url(images/1x/30w/受話器.png);
+    padding-right: 8px;
+  }
+  .webyoyaku p a::after,
+  .yoyaku p a::after {
+    content: url(images/1x/30w/40h/矢印.png);
+    padding-left: 10px;
+  }
+  .webyoyaku p a::before {
+    content: url(images/1x/30w/40h/スマホで予約.png);
+  }
+  .webyoyaku p a::after {
+    padding-left: 0;
+  }
+  .haisharogo {
+    margin-top: 2em;
+  }
+  .address-wrap {
+    color: #5298d6;
+  }
+  .address-wrap .akusesu {
+    padding: 18px 0;
+    border-bottom: solid 1px #000;
+    margin-top: 0;
+  }
+  .address-wrap address {
+    font-style: normal;
+  }
+  .address-wrap address p {
+    margin: 0 0 19px 0;
+  }
+  .flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  .width1280 {
+    max-width: 1280px;
+    margin: auto;
+  }
+  footer .flex {
+    padding: 0;
+    justify-content: center;
+  }
+  footer ul li {
+    border-left: solid 1px #000;
+    text-align: center;
+  }
+  footer ul li:last-child {
+    border-right: solid 1px #000;
+  }
+  footer ul li a {
+    color: #00406c;
+    padding: 0 2.5em;
+    margin: 0;
+  }
+  footer ul:first-child {
+    padding-bottom: 2em;
+  }
+.namae {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+  }
+  .namae::after {
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+  }
+  .namae:hover::after {
+    bottom: -9px;
+    opacity: 1;
+    visibility: visible;
+  }
+.copylight{
+    text-align: center;
+    height: 40px;
+    color: #fff;
+    background-color: #5298d6;
+    padding: 8px;
+    margin-bottom: 0;
+}
+.map {
+    width: 100%;
+    position: relative;
+    padding-top: 56.25%;
+}
+.map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.annai-wrap {
+    width: 50%;  
+}
+.address-wrap {
+    width: 48%;
+}
+.gap2 {
+    gap: 2%;
+    margin-bottom: 140px;
+}
+.sample-box:hover {
+  opacity: 0.5;
+  transition: 0.4s;
+}
+.webyoyaku p a:hover:after,
+ .yoyaku p a:hover:after {
+  opacity: 0.5;
+  transition: 0.4s;
+ }
+.slider_outer2 {
+	width: 100%;
+	height: auto;
+	margin: 1vw auto;
+	position: relative;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: end;
+	-ms-flex-align: end;
+	-ms-flex-line-pack: center;
+	align-content: center;
+}
+.slider_outer2 .slider1_2 {
+	width: 60%;
+	height: auto;
+        margin: 0 auto;
+        padding: 0;
+}
+.slider_outer2 .slick-track {
+	height: 100%;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: end;
+	-ms-flex-align: end;
+	align-items: flex-end;
+	-ms-flex-line-pack: center;
+	align-content: center;
+}
+.slider_outer2 .slide-item img {
+	width: 100%;
+	height: 508px;
+  object-fit: cover;
+}
+.slider_outer2 .thumb1_2 {
+	width: 40%;
+	height: auto;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+  padding: 0;
+}
+.slider_outer2 .thumbnail-item {
+	box-sizing: border-box;
+	position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 5em;
+  color: #ffffff;
+}
+.slider_outer2 .thumbnail-item:after {
+	content: '';
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	transition: .3s opacity linear;
+}
+.slider_outer2 .thumbnail-item.thumbnail-current:after {
+	opacity: 0;
+}
+.slider_outer2 .thumbnail-item img {
+	width: 100%;
+	margin: 0 auto;
+
+}
+.thumbnail-item {
+  border-top: #000 solid 1px;
+  background-color: #5298d6;
+  font-size: 22px;
+}
+.thumbnail-item:hover {
+  background-color: #a9a6a6;
+  transition: 0.5s;
+}
+.thumb1_2 li:last-child {
+  border-bottom: #000 solid 1px;
+}
+.shoukai {
+  margin: 55px;
+}
+  .fadeInDown {
+   -webkit-animation-fill-mode:both;
+   -ms-animation-fill-mode:both;
+   animation-fill-mode:both;
+   -webkit-animation-duration:1s;
+   -ms-animation-duration:1s;
+   animation-duration:1s;
+   -webkit-animation-name: fadeInDown;
+   animation-name: fadeInDown;
+   visibility: visible !important;
+  }
+  @-webkit-keyframes fadeInDown {
+   0% { opacity: 0; -webkit-transform: translateY(-20px); }
+   100% { opacity: 1; -webkit-transform: translateY(0); }
+  }
+  @keyframes fadeInDown {
+   0% { opacity: 0; -webkit-transform: translateY(-20px); -ms-transform: translateY(-20px); transform: translateY(-20px); }
+   100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
+  }
+  #pagetop {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    margin: 0;
+}
+#pagetop {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    margin: 0;
+    
+}
+#pagetop a{
+    position: relative;
+    display: flex;
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    background:#5298d6;
+    transition: opacity .6s ease;
+    color: #FFF;
+    align-items: center;
+    text-decoration: none;
+    font-size: 40px;
+    border-radius:100%;
+}
+#pagetop a:hover {
+    opacity: .3;
+}
+@media screen and (max-width:767px) {
+#pagetop a {
+    width: 50px;
+    height: 50px;
+}
+}
+
